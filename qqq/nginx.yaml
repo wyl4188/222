@@ -20,8 +20,8 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:latest
-          imagePullPolicy: Always
+          image: registry.cn-hangzhou.aliyuncs.com/wdnmd11/nginx:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
               name: tcp-8080
